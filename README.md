@@ -12,6 +12,6 @@ Plinko is a game of pure luck, as the player has no control over where the disc 
 It is often used as a fun and entertaining way to give away prizes or determine the order of contestants in a competition. 
 The game has become a classic staple of many game shows and has entertained millions of viewers for decades.
 
-## Plinko Game?
+## Plinko Game
 
 ![Plinko game image](https://github.com/mbnzim/Plinko/assets/37528223/48f897ca-5851-40d4-8fa8-56f16ad2118a)
