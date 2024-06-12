@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/pixi.js@7.x/dist/pixi.min.js"></script>
+    <script src="js/game.js" type="module"></script> 
+    <title>Plinko</title>
+</head>
+
+<body>
+    <div class="game-wrapper">
+        <div class="heading">
+            <img src="/images/plinko-logo.png" height='150px' width='200px' alt="logo" />
+        </div>
+
+        <div class="canvas-wrapper">
+            <div class="game-history">
+                <div class="table-wrapper" id="table-wrapper">
+                    <table>
+                        <tr>
+                            <th>
+                                <span><p style='font-size: 20px;'>Time</p></span>
+                            </th>
+                            <th>
+                                <span><p style='font-size: 20px;'>Bet</p></span>
+                            </th>
+                            <th>
+                                <span><p style='font-size: 20px;'>Payout</p></span>
+                            </th>
+                            <th>
+                                <span><p style='font-size: 20px;'>Profit</p></span>
+                            </th>
+                        </tr>
+                    </table>
+                    <table>
+                        <tbody id="game-history-table-body">
+    
+                        </tbody>
+                    </table>
+                </div>
+            </div> 
+            <div id="canvas">
+                <div class="canvas-options">
+                    <span class="canvas-options_title">Lines</span>
+                    <div id="canvas-option_div" class="selected-line">8</div>
+                    <div id="canvas-option_div">9</div>
+                    <div id="canvas-option_div">10</div>
+                    <div id="canvas-option_div">11</div>
+                    <div id="canvas-option_div">12</div>
+                    <div id="canvas-option_div">13</div>
+                    <div id="canvas-option_div">14</div>
+                    <div id="canvas-option_div">15</div>
+                    <div id="canvas-option_div">16</div>
+                </div>
+                <div id="play-button" class="play-button">
+                    <label style='font-size: 40px;'>PLAY</label>
+                </div>
+                <div class="points-bet-wrapper">
+                    <div class="points-bet-wrapper__won-flash" id="points-bet-wrapper__won-flash">
+                        <span>Won</span>
+                        &nbsp;
+                        <span id="points-won"></span>
+                        &nbsp;
+                        <span> points</span>
+                    </div>
+                    <div class="points-bet-wrapper__bet">
+                        <div id="points-bet-wrapper__bet--decrease" ><p style='font-size: 25px; padding-right: 20px;'>-</p></div>
+                        <span><p style='font-size:20px'>Bet:</p> </span>&nbsp;
+                        <span id="points-bet-wrapper__bet--amount"><p style='font-size:20px'>1.00</p></span>
+                        <div id="points-bet-wrapper__bet--increase" class=><p style='font-size: 25px; padding-left: 20px;'>+</p></div>
+                    </div>
+                    <div class="points-bet-wrapper__points">
+                        <span><p style='font-size:20px; font-weight: bold;'>BALANCE:</p></span>
+                        &nbsp;
+                        <p  style='font-size:20px; font-weight: bold;'><span id="points-bet-wrapper__points--player-points"></span></p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+            
+    </div>
+</body>
+</html>
