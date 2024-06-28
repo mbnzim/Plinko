@@ -277,7 +277,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .table-wrapper {
-  height: 200px;
+  height: 700px;
   overflow-y: scroll;
 }
 
@@ -286,7 +286,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .td-lost {
-  background-color: #f6a50320;
+  background-color: rgba(255, 8, 8, 0.342);
 }
 
 .td-won {
